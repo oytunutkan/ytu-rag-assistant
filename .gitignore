@@ -15,9 +15,6 @@ __pycache__/
 firebase-service-account.json
 *service-account*.json
 
-*.db
-*.sqlite
-*.sqlite3
 
 test_runner.py
 benchmark_results*
