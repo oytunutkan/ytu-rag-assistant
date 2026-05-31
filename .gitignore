@@ -3,6 +3,7 @@
 .venv/
 venv/
 env/
+
 __pycache__/
 *.pyc
 
@@ -14,7 +15,6 @@ __pycache__/
 firebase-service-account.json
 *service-account*.json
 
-chroma_db*/
 *.db
 *.sqlite
 *.sqlite3

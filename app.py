@@ -1,4 +1,5 @@
 import os
+import json
 import re
 import base64
 import secrets
@@ -55,6 +56,7 @@ DAILY_USER_LIMIT = int(os.environ.get("DAILY_USER_LIMIT", "20"))
 DAILY_GUEST_LIMIT = int(os.environ.get("DAILY_GUEST_LIMIT", "5"))
 FIREBASE_API_KEY = os.environ.get("FIREBASE_API_KEY")
 FIREBASE_SERVICE_ACCOUNT_PATH = os.environ.get("FIREBASE_SERVICE_ACCOUNT_PATH")
+FIREBASE_SERVICE_ACCOUNT_JSON = os.environ.get("FIREBASE_SERVICE_ACCOUNT_JSON")
 ALLOWED_EMAIL_DOMAIN = os.environ.get("ALLOWED_EMAIL_DOMAIN", "std.yildiz.edu.tr").lower().strip()
 ADMIN_EMAILS = [
     item.strip().lower()
@@ -66,14 +68,48 @@ ADMIN_EMAILS = [
 # FIREBASE ADMIN / FIRESTORE
 # =========================================================
 
+def load_firebase_credential():
+    service_account_json = os.environ.get("FIREBASE_SERVICE_ACCOUNT_JSON")
+
+    if service_account_json:
+        try:
+            service_account_info = json.loads(service_account_json)
+        except json.JSONDecodeError as exc:
+            raise RuntimeError("FIREBASE_SERVICE_ACCOUNT_JSON geçerli bir JSON değil.") from exc
+
+        if "private_key" in service_account_info:
+            service_account_info["private_key"] = service_account_info["private_key"].replace("\\n", "\n")
+
+        return credentials.Certificate(service_account_info)
+
+    try:
+        firebase_secret = st.secrets.get("firebase_service_account")
+    except Exception:
+        firebase_secret = None
+
+    if firebase_secret:
+        service_account_info = dict(firebase_secret)
+
+        if "private_key" in service_account_info:
+            service_account_info["private_key"] = service_account_info["private_key"].replace("\\n", "\n")
+
+        return credentials.Certificate(service_account_info)
+
+    service_account_path = os.environ.get("FIREBASE_SERVICE_ACCOUNT_PATH")
+
+    if not service_account_path:
+        raise RuntimeError("Firebase service account bilgisi bulunamadı.")
+
+    if not os.path.exists(service_account_path):
+        raise RuntimeError(f"Firebase service account dosyası bulunamadı: {service_account_path}")
+
+    return credentials.Certificate(service_account_path)
+
+
 @st.cache_resource(show_spinner=False)
 def get_firestore_client():
-    if not FIREBASE_SERVICE_ACCOUNT_PATH:
-        raise RuntimeError("FIREBASE_SERVICE_ACCOUNT_PATH .env içinde tanımlı değil.")
-    if not os.path.exists(FIREBASE_SERVICE_ACCOUNT_PATH):
-        raise RuntimeError(f"Firebase service account dosyası bulunamadı: {FIREBASE_SERVICE_ACCOUNT_PATH}")
     if not firebase_admin._apps:
-        cred = credentials.Certificate(FIREBASE_SERVICE_ACCOUNT_PATH)
+        cred = load_firebase_credential()
         firebase_admin.initialize_app(cred)
     return firestore.client()
 
@@ -1814,6 +1850,9 @@ def extend_unique_docs(target_docs, candidate_docs, limit):
     return target_docs
 
 def build_balanced_retrieval_plan(categories):
+    # V12 balanced retrieval:
+    # Final context 10 chunk. İlk kategori hâlâ baskın, ama 296 testindeki komşu kategori kaçmalarını
+    # azaltmak için 2.-4. kategoriye ve genel aramaya daha kontrollü pay bırakılır.
     top_categories = get_filter_categories(categories)[:4]
 
     if not top_categories:
@@ -2226,6 +2265,10 @@ def answer_question(user_prompt, user=None, guest=False):
         return final_cevap, retrieval_debug, sources, context_docs, arama_sorusu
 
 
+# =========================================================
+# UI HELPERS
+# =========================================================
+
 def init_guest_state():
     guest_id = get_or_create_guest_id()
 
@@ -2276,7 +2319,7 @@ def render_about_page():
     about_html = """<div class="about-card">
 <div class="about-kicker">YTÜ Öğrenci İşleri Asistanı</div>
 <h1>Hakkında</h1>
-<p class="about-lead">Bu asistan, Yıldız Teknik Üniversitesi öğrencilerinin mevzuat, staj ve akademik süreçlerle ilgili sorularına kaynak odaklı ve hızlı cevap vermek için geliştirilmiştir. Geliştirilen RAG tabanlı YTÜ sanal asistanı, farklı zorluk ve kategori seviyelerini kapsayan toplam 796 soruluk test setinde ağırlıklı değerlendirme yöntemiyle yaklaşık %88 başarı oranı elde etmiştir. Değerlendirmede tam doğru cevaplar 1, kısmi doğru cevaplar 0.5, hatalı cevaplar 0 puan olarak kabul edilmiştir.</p>
+<p class="about-lead">Bu asistan, Yıldız Teknik Üniversitesi öğrencilerinin mevzuat, staj ve akademik süreçlerle ilgili sorularına kaynak odaklı ve hızlı cevap vermek için geliştirilmiştir.</p>
 <div class="about-grid">
 <div class="about-mini-card">
 <h3>Ne yapar?</h3>
