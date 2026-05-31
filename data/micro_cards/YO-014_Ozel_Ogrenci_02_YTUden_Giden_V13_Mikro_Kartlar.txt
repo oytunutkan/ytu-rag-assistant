@@ -1,0 +1,21 @@
+V13 MİKRO KARTLAR - ÖZEL ÖĞRENCİ YTÜ'DEN GİDEN - YO-014
+
+KART: Senato onaylı üniversite şartı
+SORU_KALIPLARI: YTÜ öğrencisi başka üniversiteden ders alabilir mi, herhangi bir üniversiteden özel öğrenci
+CEVAP: YTÜ öğrencisinin başka bir yükseköğretim kurumundan özel öğrenci olarak ders alabilmesi için ilgili üniversite/bölümün Senato tarafından onaylanmış olması gerekir.
+
+KART: YTÜ öğrencisinin başka kurumdan ders alırken kredi sınırı
+SORU_KALIPLARI: aynı dönemde hem YTÜ'den hem başka üniversiteden ders, toplam kredi sınırı
+CEVAP: YTÜ öğrencisinin başka kurumdan aldığı derslerle birlikte toplam ders yükü Ders Kayıt Esaslarındaki 25 yerel kredi sınırını; AGNO 3.00 ve üzeri öğrenciler için 28 kredi sınırını aşamaz.
+
+KART: Öğrenim boyunca özel öğrencilik kredi üst sınırı
+SORU_KALIPLARI: özel öğrenci öğrenim boyunca en fazla kaç kredi, toplam 30 yerel kredi
+CEVAP: YTÜ öğrencisi, özel öğrencilik kapsamında öğrenimi boyunca en fazla 30 yerel kredi ders alabilir.
+
+KART: Başka kurumdan ders alan YTÜ öğrencisinin hakları
+SORU_KALIPLARI: başka üniversiteden ders alırsam YTÜ öğrencilik haklarım biter mi
+CEVAP: Özel öğrenci olarak diğer yükseköğretim kurumlarından aynı düzeyde ders alan öğrencilerin YTÜ'deki öğrencilik hakları devam eder.
+
+KART: YTÜ öğrencisi başka kurumdan ders almak için belge
+SORU_KALIPLARI: başka üniversiteden ders almak için bölümüne hangi belge, haftalık ders programı içerik kredi AKTS
+CEVAP: YTÜ öğrencisi, almak istediği dersin haftalık ders programı, içerik, yerel kredi ve AKTS bilgilerini gösteren onaylı belge ile kayıtlı olduğu bölüm başkanlığına başvurur.

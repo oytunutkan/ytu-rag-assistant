@@ -1,0 +1,29 @@
+V13 MİKRO KARTLAR - ÇAP - YÖ-098
+
+KART: ÇAP tüm derslerden başarı şartı
+SORU_KALIPLARI: çap başvurusu tüm derslerden geçmek, bir dersten 1.5 aldım çap
+CEVAP: ÇAP başvurusu için öğrencinin bulunduğu yarıyıla kadar tabi olduğu öğretim planındaki derslerin tümünden başarılı olması ve her bir dersin not karşılığının 4.0 üzerinden en az 2.0 olması gerekir.
+
+KART: ÇAP AGNO alt sınırı
+SORU_KALIPLARI: çap agno kaç, 2.70 ile çap olur mu
+CEVAP: ÇAP başvurusu için öğrencinin geldiği programdaki AGNO'sunun en az 2.72/4.00 olması gerekir; 2.70 bu şartı sağlamaz.
+
+KART: ÇAP ilk yüzde 20 değilse
+SORU_KALIPLARI: çap ilk yüzde 20 değilim, ösym puanım yüksek
+CEVAP: AGNO'su en az 2.72 olup sınıf başarı sıralamasında ilk %20'de olmayan öğrenci, kayıt olduğu programa girdiği yıldaki merkezi yerleştirme puanı başvuracağı programın o yılki taban puanına eşit veya yüksekse ÇAP başvurusu yapabilir.
+
+KART: ÇAP başvuru zamanı
+SORU_KALIPLARI: çap başvurusu hangi yarıyıl, çap ne zaman yapılır
+CEVAP: ÇAP başvurusu en erken 3., en geç 5. yarıyılın başında yapılabilir; başvurular yalnızca güz yarıyılında alınır.
+
+KART: %30 İngilizceden %100 İngilizce ÇAP
+SORU_KALIPLARI: yüzde otuz İngilizce yüzde yüz İngilizce çap iys
+CEVAP: %30 İngilizce eğitim yapan programlardan %100 İngilizce eğitim yapan programlara ÇAP başvurularında yeniden İYS şartı aranmaz.
+
+KART: ÇAP kazanıp kayıt yaptıranın tekrar başvurusu
+SORU_KALIPLARI: çapa yerleştim tekrar çap, başka çap yapabilir miyim
+CEVAP: ÇAP hakkı kazanıp kayıt yaptıran öğrenciler öğrenim süresi içinde bir daha ÇAP başvurusunda bulunamaz; ancak kurum içi yatay geçiş veya Yan Dal başvurusu yapabilir.
+
+KART: ÇAP yetenek sınavı
+SORU_KALIPLARI: yetenek sınavlı programa çap, özel yetenek çap
+CEVAP: Özel yetenek sınavı ile öğrenci alan ÇAP lisans programına kabulde, başvuru koşullarına ek olarak yetenek sınavında da başarılı olma şartı aranır.

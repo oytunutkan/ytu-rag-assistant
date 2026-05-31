@@ -1,0 +1,25 @@
+V13 MİKRO KARTLAR - SINAV YÖNERGESİ - YÖ-075
+
+KART: Sınav türleri ve ortamı
+SORU_KALIPLARI: dersin hocası sadece klasik yazılı mı yapar, sınavlar elektronik olur mu
+CEVAP: Sınavlar yazılı, test veya sözlü olarak; yüz yüze veya elektronik ortamlarda yürütülebilir.
+
+KART: Başarı notu kriterleri
+SORU_KALIPLARI: vize final ağırlıkları ne zaman duyurulur, bologna bilgi sistemi
+CEVAP: Başarı notunun hesaplanmasında kullanılacak kriterler ve ağırlıkları, ilgili öğretim elemanı tarafından eğitim-öğretim yılı başında belirlenir ve Bologna Bilgi Sistemi aracılığıyla ilan edilir.
+
+KART: Devamsız öğrencinin final hakkı
+SORU_KALIPLARI: devamsızlıktan kalan final sınavına girebilir mi
+CEVAP: Devamsız öğrenciler yarıyıl sonu sınavlarına giremez.
+
+KART: Kısa sınav duyurusu
+SORU_KALIPLARI: quiz kısa sınav önceden bildirim
+CEVAP: Kısa sınav veya quiz gibi sınavların öğrencilere en az 1 hafta önceden duyurulması gerekir.
+
+KART: Yarıyıl sonu sınav sonuçları
+SORU_KALIPLARI: final sonuçları ne zaman ilan edilir, yarıyıl sonu sınav sonuçları
+CEVAP: Yarıyıl sonu sınav sonuçları, yarıyıl sonu sınavları bitiminden sonraki 2 hafta içinde ilan edilir.
+
+KART: Soru ve cevap kağıdı dışarı çıkarma
+SORU_KALIPLARI: sınav kâğıdını dışarı çıkarmak kopya mı
+CEVAP: Soru ve cevap kâğıtları sınav salonu dışına çıkarılamaz; bu durum kopya girişimi olarak değerlendirilir.

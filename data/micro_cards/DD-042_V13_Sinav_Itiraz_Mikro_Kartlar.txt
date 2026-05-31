@@ -1,0 +1,17 @@
+V13 MİKRO KARTLAR - SINAV İTİRAZI - DD-042
+
+KART: Sınav itiraz süresi başlangıcı
+SORU_KALIPLARI: itiraz süresi tam olarak ne zaman başlar, not sisteme geç girildiyse
+CEVAP: Sınav sonucuna itiraz süresi, sonucun ilan edilmesinden veya akademik takvimde belirtilen sınav not girişlerinin otomasyon sistemine girilmesinin son gününden itibaren başlar ve üç iş günüdür.
+
+KART: E-posta ile itiraz
+SORU_KALIPLARI: e-posta ile itiraz geçerli mi
+CEVAP: Esaslarda sınav sonucuna itirazın dilekçe ile ilgili yüksekokul müdürlüğüne veya fakülte dekanlığına yapılacağı belirtilir; e-posta tek başına resmi başvuru olarak düzenlenmemiştir.
+
+KART: Final itirazı bütünleme öncesi
+SORU_KALIPLARI: final sınavı itirazı ne zaman yapılmalı
+CEVAP: Final sınavı itirazı, bütünleme sınavından en az 3 iş günü önce yapılmalı ve 10 iş günü içinde sonuçlandırılmalıdır.
+
+KART: İtiraz sonucu kesinleşme
+SORU_KALIPLARI: not değişikliği ne zaman kesinleşir, itiraz sonucu kim onaylar
+CEVAP: Komisyon raporu sonucunda not değişikliği gerekiyorsa, değişiklik ilgili fakülte veya yüksekokul yönetim kurulu kararıyla kesinleşir.

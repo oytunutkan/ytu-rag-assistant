@@ -1,0 +1,14 @@
+streamlit
+pandas
+python-dotenv
+requests
+firebase-admin
+docx2txt
+langchain-google-genai
+langchain-huggingface
+langchain-chroma
+langchain-classic
+langchain-core
+chromadb
+sentence-transformers
+langchain-community

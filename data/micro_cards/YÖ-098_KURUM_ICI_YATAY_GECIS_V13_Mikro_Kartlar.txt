@@ -1,0 +1,17 @@
+V13 MİKRO KARTLAR - KURUM İÇİ YATAY GEÇİŞ - YÖ-098
+
+KART: Kurum içi başvuru zamanı
+SORU_KALIPLARI: YTÜ içinde başka bölüme ne zaman geçebilirim, kurum içi yatay geçiş yarıyıl
+CEVAP: Kurum içi yatay geçiş başvurusu öğrenimin 3. veya 5. yarıyılının başında yapılabilir; başvurular yalnızca güz yarıyılında alınır.
+
+KART: Kurum içi yalnız bir program
+SORU_KALIPLARI: kurum içi yatay geçiş iki programa başvuru, aynı anda iki bölüm
+CEVAP: Kurum içi yatay geçişte öğrenci yalnızca bir program için başvuruda bulunabilir.
+
+KART: Kurum içi AGNO ve ders şartı
+SORU_KALIPLARI: kurum içi yatay geçiş agno, tüm derslerden kaç almak gerekir
+CEVAP: Kurum içi yatay geçiş için öğrencinin bulunduğu yarıyıla kadar öğretim planındaki derslerin tümünden başarılı olması, her dersten en az 2.0 alması ve geldiği programdaki AGNO'sunun en az 3.00 olması gerekir.
+
+KART: Kurum içi yetenek sınavı
+SORU_KALIPLARI: yetenek sınavlı bölüme kurum içi geçiş
+CEVAP: Yetenek sınavı ile öğrenci alan diploma programlarına kurum içi yatay geçişlerde diğer koşullara ek olarak yetenek sınavında da başarılı olma şartı aranır.

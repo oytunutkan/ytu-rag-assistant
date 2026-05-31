@@ -1,0 +1,17 @@
+V13 MİKRO KARTLAR - İME KOORDİNATÖRLÜK/KOMİSYON GÖREVLERİ - YÖ-088
+
+KART: İME bilgi bankası
+SORU_KALIPLARI: İME bilgi bankasını kim günceller, işletmelerle ilgili bilgi altyapısı
+CEVAP: İME'nin düzenli yürütülmesi için gerekli bilgi bankasının oluşturulması ve güncellenmesi Koordinatörlüğün görevleri arasındadır.
+
+KART: İME oryantasyon
+SORU_KALIPLARI: İME için tanıtım oryantasyon kimin görevi
+CEVAP: İşletmede Mesleki Eğitimi tanıtma amaçlı oryantasyon eğitimini fakültelerle koordineli biçimde düzenlemek Koordinatörlüğün görevidir.
+
+KART: İyileştirme talepleri
+SORU_KALIPLARI: fakülte komisyonlarının iyileştirme revizyon taleplerini kim değerlendirir
+CEVAP: Fakülte Komisyonları tarafından iletilen revizyon, değişiklik ve iyileştirme taleplerini Koordinatörlük değerlendirir ve önerilerini Rektörlüğe iletir.
+
+KART: İME koordinatörü görev süresi
+SORU_KALIPLARI: İME koordinatörü kaç yıl görev yapar
+CEVAP: Koordinatörün görev süresi 3 yıldır; görev süresi biten koordinatör tekrar görevlendirilebilir.

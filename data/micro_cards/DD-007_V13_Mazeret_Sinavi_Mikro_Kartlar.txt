@@ -1,0 +1,25 @@
+V13 MİKRO KARTLAR - MAZERET SINAVI - DD-007
+
+KART: Hastalık raporu
+SORU_KALIPLARI: hastalık mazeretinde rapor kaç günlük, özel muayenehane raporu
+CEVAP: Hastalık mazeretinin kabul edilebilmesi için en az 3 günlük rapor gerekir; özel muayenehane raporları kabul edilmez.
+
+KART: Doğal afet kamuoyuna duyurulmuşsa
+SORU_KALIPLARI: doğal afet nedeniyle ulaşım kamuoyuna duyurulmuşsa belge gerekir mi
+CEVAP: Doğal afet nedeniyle ulaşımın olanaksız olduğu durum kamuoyuna duyurulmuşsa ayrıca belge istenmez; aksi halde ilgili mülki amirlikten belge alınmalıdır.
+
+KART: Raporlu veya mazeretli günde sınava girmek
+SORU_KALIPLARI: raporlu olduğum gün başka sınava girsem, mazeretliyim diye sınava girersem
+CEVAP: Mazeretli olduğu günlerde yapılan sınavlara giren öğrencinin ilgili sınavları birim tarafından geçersiz sayılır.
+
+KART: Liste dışı mazeret
+SORU_KALIPLARI: listelenmeyen mazeret, yönergede sayılmayan sebep
+CEVAP: Yönergede sayılanlar dışındaki mazeretler de belgelendirilmek koşuluyla değerlendirilebilir.
+
+KART: Gözaltı veya tutukluluk
+SORU_KALIPLARI: gözaltı tutukluluk mazeret sınavı 21 iş günü
+CEVAP: Bir yarıyılda teorik derslerde 21 iş gününden, diğer uygulamalarda 14 iş gününden uzun sürmeyen gözaltı veya tutukluluk durumunda ilgili belge, durum sona erdikten sonra 3 gün içinde bölüm başkanlığına sunulur; bu süreleri aşan durumlarda mazeret sınav hakkı verilmez.
+
+KART: Resmi görevlendirme
+SORU_KALIPLARI: sınav döneminin sonuna kadar mazeret başvurusu
+CEVAP: Ulusal/uluslararası yarışma, sportif faaliyet ve benzeri resmi görevlendirmelerde belge, mazeretten sonra açılan ilk sınav döneminin sonuna kadar sunulabilir; genel mazeretlerde 3 gün kuralı uygulanır.

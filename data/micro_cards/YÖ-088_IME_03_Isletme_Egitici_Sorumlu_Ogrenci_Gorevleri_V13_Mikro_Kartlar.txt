@@ -1,0 +1,13 @@
+V13 MİKRO KARTLAR - İME İŞLETME/EĞİTİCİ/ÖĞRENCİ - YÖ-088
+
+KART: İşletmedeki öğrenciden kim sorumludur
+SORU_KALIPLARI: işletmedeki öğrenciden kim sorumlu, eğitici personel ne yapar
+CEVAP: İşletme yöneticisi tarafından görevlendirilen eğitici personel, öğrencinin işletmedeki eğitiminden sorumludur.
+
+KART: Sorumlu öğretim elemanı görevi
+SORU_KALIPLARI: sorumlu öğretim elemanı ne yapar, İME öğrencisini kim izler
+CEVAP: Sorumlu öğretim elemanı işletme ile iletişim kurar, öğrencileri izler ve denetler, raporları inceler ve İME başarı notunu belirler.
+
+KART: Öğrencinin raporu
+SORU_KALIPLARI: İME sırasında hangi rapor tutulur, haftalık aylık çalışma raporu
+CEVAP: Öğrenci, İME sırasında yaptığı çalışmaları gösteren Haftalık veya Aylık Çalışma Raporu düzenler.

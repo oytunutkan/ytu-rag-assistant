@@ -1,0 +1,17 @@
+V13 MİKRO KARTLAR - İME DERS/SÜRE/BAŞVURU/DEĞERLENDİRME - YÖ-088
+
+KART: İME süresi
+SORU_KALIPLARI: İME ne kadar sürer, işletmede mesleki eğitim süresi
+CEVAP: İşletmede Mesleki Eğitim bir yarıyıl süreyle tam zamanlı ve kesintisiz olarak yapılır.
+
+KART: İME işletme belirleme
+SORU_KALIPLARI: İME işletmeler rastgele mi seçilir, işletme nasıl belirlenir
+CEVAP: İşletme, öğrencinin program gerekleri ve öğrenme çıktılarına uygun olarak Fakülte Komisyonu'nun önerisi ve Dekanın onayı ile belirlenir.
+
+KART: İME öğrenci kabul kriteri
+SORU_KALIPLARI: öğrenci hangi kritere göre işletmeye kabul edilir, İME AGNO sıralaması
+CEVAP: Öğrencilerin işletmelere yerleştirilmesinde AGNO sıralaması ve tercihler dikkate alınır; kontenjanların değerlendirilmesi ilgili komisyonlarca yapılır.
+
+KART: İME değerlendirme itirazı
+SORU_KALIPLARI: İME değerlendirme sonucuna itiraz kaç gün
+CEVAP: İME değerlendirme sonucuna itirazlar, sonucun ilanından itibaren üç iş günü içinde yapılır.

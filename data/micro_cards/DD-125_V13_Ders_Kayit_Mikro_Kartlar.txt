@@ -1,0 +1,29 @@
+V13 MİKRO KARTLAR - DERS KAYIT - DD-125
+
+KART: Normal dönem kredi sınırı
+SORU_KALIPLARI: normal dönemde kaç kredi ders alabilirim, en fazla 25 yerel kredi
+CEVAP: Öğrenci normal dönemde en fazla 25 yerel krediye kadar ders alabilir.
+
+KART: AGNO 3.00 kredi sınırı
+SORU_KALIPLARI: agno 3.00 ise kaç kredi, 28 kredi
+CEVAP: AGNO'su 3.00 ve üzerinde olan öğrenciler için ders yükü 28 yerel krediye kadar çıkarılabilir.
+
+KART: ÇAP/Yan Dal/Pedagojik Formasyon kredi sınırı
+SORU_KALIPLARI: ÇAP veya Yan Dal öğrencisiyim ekstra kredi, 31 kredi
+CEVAP: ÇAP, Yan Dal veya Pedagojik Formasyon programlarından birinin AGNO'su 3.00 ve üzerindeyse öğrenci 31 yerel krediye kadar ders alabilir.
+
+KART: Üstten ders alma AGNO engeli
+SORU_KALIPLARI: üstten ders almak için AGNO, iki yarıyıl üst üste 2.00 altında
+CEVAP: İki yarıyıl üst üste AGNO'su 2.00'ın altında olan öğrenci, 5. yarıyıl başından itibaren üst yarıyıllardan ders alamaz.
+
+KART: Ders kontenjanını kim artırır
+SORU_KALIPLARI: ders kontenjanını danışmanım artırabilir mi
+CEVAP: Bir dersin kontenjanını yalnızca o dersi açan bölüm/program başkanlığı artırabilir.
+
+KART: Dersin 10 öğrenciyle açılması
+SORU_KALIPLARI: FYK kararıyla ders 10 öğrenci, 12 öğrencili ders açılır mı
+CEVAP: Zorunlu ve istisnai hallerde ilgili yönetim kurulu kararıyla bir dersin açılması için gereken öğrenci sayısı 10 kişiye kadar düşürülebilir.
+
+KART: Yabancı dilde program öğrencisi Türkçe ders
+SORU_KALIPLARI: yabancı dilde program Türkçe verilen ders alabilir mi
+CEVAP: Yabancı dilde öğretim yapılan programlarda kayıtlı öğrenciler, Atatürk İlkeleri ve İnkılap Tarihi ile Türk Dili dersleri hariç, Türkçe verilen derslere kayıt yaptıramaz.

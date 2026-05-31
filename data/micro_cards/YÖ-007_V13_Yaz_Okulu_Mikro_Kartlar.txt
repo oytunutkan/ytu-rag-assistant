@@ -1,0 +1,29 @@
+V13 MİKRO KARTLAR - YAZ OKULU - YÖ-007
+
+KART: Yaz okulu süresi
+SORU_KALIPLARI: yaz okulu ne kadar sürer
+CEVAP: Yaz okulu en az 5 hafta teorik eğitim ve 1 hafta final sınavı olmak üzere en az 6 haftadır.
+
+KART: Yaz okulu kredi sınırı
+SORU_KALIPLARI: yaz okulunda toplam kaç kredi ders alınabilir
+CEVAP: Yabancı dil hazırlık sınıfları hariç, yaz okulunda alınacak derslerin toplamı çakışmaması koşuluyla 9 krediyi geçemez.
+
+KART: Yaz okuluna dış öğrenci
+SORU_KALIPLARI: başka üniversite öğrencisi yaz okuluna katılabilir mi
+CEVAP: Başka yükseköğretim kurumu öğrencileri özel öğrenci statüsünde YTÜ Yaz Okuluna kayıt yaptırabilir; yaz okulunda en fazla 9 kredi ders alınabilir.
+
+KART: Yaz okulu uzaktan eğitim modülü
+SORU_KALIPLARI: yaz okulu uzaktan eğitim hangi platform, onlinekampus
+CEVAP: Yaz okulunda uzaktan eğitimle verilecek dersler ve sınavlar yalnızca Üniversitenin Uzaktan Eğitim Modülü üzerinden yürütülür.
+
+KART: Yaz okulunda senkron ders
+SORU_KALIPLARI: yaz okulunda uzaktan dersler senkron mu
+CEVAP: Yaz okulundaki uzaktan eğitim dersleri, öğrenci ve öğretim elemanı arasında etkileşim kurulacak şekilde eşzamanlı olarak yürütülür.
+
+KART: Yaz okulunda ders bırakma
+SORU_KALIPLARI: yaz okulunda ders bırakma çekilme
+CEVAP: Yaz okulunda açılan derslerden ders bırakma, çekilme veya ders silme işlemi uygulanmaz.
+
+KART: Yaz okulunda ders saati
+SORU_KALIPLARI: yaz okulunda ders saati normal yarıyıl kadar mı
+CEVAP: Yaz okulunda açılan her dersin toplam saati, normal yarıyıldaki toplam ders saati kadar belirlenir.

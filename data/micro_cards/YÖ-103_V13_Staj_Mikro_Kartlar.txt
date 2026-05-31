@@ -1,0 +1,41 @@
+V13 MİKRO KARTLAR - STAJ - YÖ-103
+
+KART: Staj süresi alt sınırı
+SORU_KALIPLARI: staj kaç iş günü, staj süresi kaç gün, zorunlu staj kaç gün
+CEVAP: Öğretim planlarında geçen staj dersinin süresi, fakülte kurulları tarafından 20 iş gününden az olmamak üzere ilgili programın niteliğine göre belirlenir.
+
+KART: Stajı iki parçaya bölme
+SORU_KALIPLARI: staj ikiye bölünür mü, stajımı iki parçaya bölebilir miyim
+CEVAP: Zorunlu ve isteğe bağlı staj, staj süresi 10 iş gününden az olmamak koşuluyla en fazla ikiye bölünebilir.
+
+KART: Üniversite laboratuvarında staj üst sınırı
+SORU_KALIPLARI: üniversite laboratuvarında staj, atölyede staj, uygulama merkezinde staj, en fazla kaç gün
+CEVAP: Staj çalışmasının en fazla 30 iş günü yükseköğretim kurumlarının laboratuvarlarında, atölyelerinde ve uygulama merkezlerinde yapılabilir.
+
+KART: Staj için belge listesi
+SORU_KALIPLARI: staja başlamadan hangi belgeler onaylatılır, staj dosyasında hangi belgeler var
+CEVAP: Öğrenci SGK Staj Formu, Genel Sağlık Sigortası Beyan ve Taahhüt Formu, Staj Defteri, Staj Sicil ve Değerlendirme Formu ile staj ücretlerine ilişkin bilgi veya başvuru formunu ilgili birimlerde onaylatmak zorundadır.
+
+KART: Staj defteri teslim süresi
+SORU_KALIPLARI: staj defteri ne zaman teslim edilir, staj dosyası teslim süresi
+CEVAP: Staj Defteri ve Staj Sicil ve Değerlendirme Formu, stajın tamamlanmasından itibaren 1 ay içinde bölüm başkanlığına teslim edilir; süresinde teslim edilmeyen staj defteri değerlendirmeye alınmaz.
+
+KART: Staj defteri düzeltme süresi
+SORU_KALIPLARI: staj defterinde eksiklik, komisyon düzeltme istedi, düzeltme süresi
+CEVAP: Staj defterinde düzeltme istenen öğrenci, istenen düzeltmeyi 1 ay içinde yapmak zorundadır; aksi halde stajı reddedilmiş sayılır.
+
+KART: Staj reddine itiraz
+SORU_KALIPLARI: stajım reddedildi itiraz, staj reddi kaç gün
+CEVAP: Stajı reddedilen öğrenci, ret kararının kendisine yazılı olarak bildirilmesini takip eden 1 hafta içinde ilgili bölüm başkanlığına itiraz edebilir.
+
+KART: Staj yapan öğrenciye ücret
+SORU_KALIPLARI: staj ücreti ne zaman ödenir, staj ücreti kaç iş günü
+CEVAP: Staj yapan öğrenciye, staj yaptığı kurum tarafından staj bitimini takiben en geç 5 iş günü içinde ücret ödenir.
+
+KART: Stajı kim değerlendirir
+SORU_KALIPLARI: stajı kim değerlendiriyor, staj komisyonu kaç kişi
+CEVAP: Stajı Bölüm Staj Komisyonu değerlendirir; komisyon bölüm öğretim elemanları arasından 3 kişiden az olmayan üyelerden oluşur ve başkanın öğretim üyesi olması gerekir.
+
+KART: Stajda ders ve sınav günü
+SORU_KALIPLARI: dersim varken staj, sınav günü staj, yarıyıl içinde staj
+CEVAP: Staj haftada üç iş gününden az olmamak şartıyla eğitim-öğretim döneminde de yapılabilir; ancak öğrenci dersinin veya sınavının olduğu günlerde staj yapamaz.

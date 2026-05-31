@@ -1,0 +1,13 @@
+V13 MİKRO KARTLAR - İME TANIMLAR - YÖ-088
+
+KART: Bölüm Komisyonu kimlerden oluşur
+SORU_KALIPLARI: İME Bölüm Komisyonu kimlerden oluşur
+CEVAP: Bölüm Komisyonu, Bölüm Başkanı başkanlığında, eğitim-öğretimden sorumlu Bölüm Başkan Yardımcısı ve bölüm temsilcisi veya temsilcilerinden oluşur.
+
+KART: Fakülte Komisyonu kimlerden oluşur
+SORU_KALIPLARI: İME Fakülte Komisyonu kimlerden oluşur
+CEVAP: Fakülte Komisyonu, dekan veya görevlendireceği dekan yardımcısının başkanlığında ilgili fakülte temsilcileriyle oluşturulur.
+
+KART: İME kapsamı
+SORU_KALIPLARI: işletmede mesleki eğitim kimleri kapsar
+CEVAP: İşletmede Mesleki Eğitim, YTÜ lisans öğrencilerinin kamu kurum ve kuruluşları ile özel kuruluşlarda yapacakları mesleki eğitimi kapsar.

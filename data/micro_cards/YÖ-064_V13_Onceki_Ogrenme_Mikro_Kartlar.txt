@@ -1,0 +1,41 @@
+V13 MİKRO KARTLAR - ÖNCEKİ ÖĞRENMENİN TANINMASI - YÖ-064
+
+KART: Başvuru zamanı
+SORU_KALIPLARI: önceki öğrenme başvurusu ne zaman, tanınma başvurusu zamanı
+CEVAP: Önceki öğrenmenin tanınması başvuru ve değerlendirme işlemleri YTÜ Akademik Takviminde belirtilen tarihler içinde yapılır.
+
+KART: Onaysız/eksik belge
+SORU_KALIPLARI: onaysız belgeyle başvuru, fotokopi faks eksik belge
+CEVAP: Fotokopi, faks, onaysız belge veya eksik belge ile yapılan başvurular işleme alınmaz.
+
+KART: Başvuru yeri
+SORU_KALIPLARI: önceki öğrenme başvurusu nereye yapılır
+CEVAP: Başvurular fakülte ve yüksekokullarda ilgili bölüm başkanlıklarına, enstitülerde ise anabilim dalı başkanlıklarına yapılır.
+
+KART: Komisyon görev süresi
+SORU_KALIPLARI: önceki öğrenme komisyonu kaç yıl, komisyon ne kadar görev yapar
+CEVAP: Önceki Öğrenmenin Tanınması Komisyonu iki yıl süreyle görev yapar.
+
+KART: Değerlendirme süreci
+SORU_KALIPLARI: önceki öğrenme değerlendirme süreci, yeterlilik sınavı kararını kim verir
+CEVAP: Değerlendirme süreci ders koordinatörünün önerisi, komisyon raporu, bölüm/enstitü kurulu kararı ve ilgili yönetim kurulu onayı ile yürütülür.
+
+KART: Başvuru kabul edilmeyen dersler
+SORU_KALIPLARI: bitirme projem için önceki öğrenme, laboratuvar atölye tez proje
+CEVAP: Laboratuvar, atölye, tez, bitirme çalışması, yönlendirilmiş çalışma, tasarım ve proje gibi dersler için önceki öğrenmenin tanınması başvurusu kabul edilmez.
+
+KART: Başarısız dersler
+SORU_KALIPLARI: başarısız olduğum dersi tanıtabilir miyim
+CEVAP: Kayıtlı olunan programdan veya yaz okulu/özel öğrenci yoluyla alınarak başarısız olunan dersler önceki öğrenmenin tanınması kapsamında değerlendirilmez.
+
+KART: Kredi sınırı
+SORU_KALIPLARI: önceki öğrenmede en fazla kaç kredi, 18 kredi
+CEVAP: Önceki öğrenmenin tanınması kapsamında en fazla 18 yerel kredilik ders tanınabilir; yayınlardan kaynaklı muafiyetler bu sınırın dışındadır.
+
+KART: Hizmet içi eğitim ve pratik çalışma
+SORU_KALIPLARI: hizmet içi eğitim kaç kredi, iş yeri deneyimi 40 saat 50 saat
+CEVAP: Belgelendirilen 40 saatlik hizmet içi eğitim 1 kredi olarak; pratik çalışmalarda ise 50 saatlik çalışma 1 kredi olarak değerlendirilebilir.
+
+KART: Sonuca itiraz
+SORU_KALIPLARI: tanınma sonucuna itiraz kaç gün
+CEVAP: Önceki öğrenmenin tanınması sonuçlarına itiraz süresi, sonuçların ilanını takip eden üç iş günüdür.

@@ -1,0 +1,17 @@
+V13 MİKRO KARTLAR - MERKEZİ YERLEŞTİRME PUANIYLA YATAY GEÇİŞ - YÖ-098
+
+KART: Merkezi yatay geçiş temel şartı
+SORU_KALIPLARI: merkezi yerleştirme puanıyla yatay geçiş, ÖSYM puanım taban puanı tutuyor
+CEVAP: Kayıt olunan yıldaki merkezi yerleştirme puanı, geçilmek istenen programın o yıldaki taban puanına eşit veya yüksekse merkezi yerleştirme puanıyla yatay geçiş başvurusu yapılabilir.
+
+KART: Merkezi yatay geçişte başarı şartı
+SORU_KALIPLARI: merkezi yatay geçişte ortalama aranır mı, başarı şartı var mı
+CEVAP: Merkezi yerleştirme puanına göre yatay geçişte başvuruların değerlendirilmesinde öğrencinin kayıtlı olduğu programa yerleştiği yıldaki ÖSYM puanı dikkate alınır; başarı şartı aranmaz.
+
+KART: Merkezi yatay geçiş bahar başvurusu
+SORU_KALIPLARI: merkezi yatay geçiş bahar dönemi
+CEVAP: Merkezi yerleştirme puanıyla yatay geçiş başvuruları yalnızca güz yarıyılı başında alınır; bahar yarıyılı için başvuru kabul edilmez.
+
+KART: Merkezi yatay geçiş hakkı kaç kez
+SORU_KALIPLARI: merkezi yatay geçiş hakkı kaç kez, MYP bir kez mi
+CEVAP: Merkezi yerleştirme puanına göre yatay geçiş hakkından yalnızca bir defa yararlanılabilir.

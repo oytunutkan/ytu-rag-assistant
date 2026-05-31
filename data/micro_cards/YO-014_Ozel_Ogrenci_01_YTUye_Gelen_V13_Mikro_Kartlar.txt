@@ -1,0 +1,25 @@
+V13 MİKRO KARTLAR - ÖZEL ÖĞRENCİ YTÜ'YE GELEN - YO-014
+
+KART: YTÜ'ye gelen özel öğrenci AGNO şartı
+SORU_KALIPLARI: YTÜ'den özel öğrenci olarak ders almak isteyen dış öğrenci AGNO, başka üniversite öğrencisi YTÜ ders
+CEVAP: YTÜ'den özel öğrenci olarak ders almak isteyen öğrencinin kayıtlı olduğu programda en az bir yarıyılı tamamlamış olması ve AGNO'sunun 4.0 üzerinden en az 3.00 veya 100 üzerinden en az 80 olması gerekir.
+
+KART: Yaz okulunda gelen özel öğrenci AGNO
+SORU_KALIPLARI: yaz okulunda YTÜ'den ders almak isteyen dış öğrenci AGNO şartı
+CEVAP: Yaz okulunda YTÜ'den ders alacak öğrencilerden 3.00/80 AGNO koşulu aranmaz.
+
+KART: Hazırlık sınıfına özel öğrenci
+SORU_KALIPLARI: hazırlık sınıfına özel öğrenci, zorunlu İngilizce hazırlık özel öğrenci
+CEVAP: Zorunlu İngilizce Hazırlık sınıfına özel öğrenci kabul edilmez.
+
+KART: Gelen özel öğrenci kredi sınırı
+SORU_KALIPLARI: başka üniversiteden YTÜ'ye özel öğrenci bir yarıyılda kaç kredi
+CEVAP: YTÜ'ye gelen özel öğrenci, derslerin çakışmaması koşuluyla bir yarıyılda en fazla 25 yerel kredilik ders alabilir; yaz okulu için Yaz Okulu Yönergesi hükümleri uygulanır.
+
+KART: Gelen özel öğrenci ücret
+SORU_KALIPLARI: özel öğrenci YTÜ'ye ücret öder mi, katkı payı nereye ödenir
+CEVAP: Özel öğrenci katkı payını veya öğrenim ücretini kayıtlı olduğu yükseköğretim kurumuna öder; YTÜ'ye ayrıca katkı payı/öğrenim ücreti ödemez.
+
+KART: Gelen özel öğrenci belgeleri
+SORU_KALIPLARI: YTÜ'den özel öğrenci olarak ders almak isteyen dış öğrenci hangi belgeler
+CEVAP: Dış öğrenci, kurumunun uygun görüşünü içeren yönetim kurulu kararıyla birlikte başvuru formu, kimlik fotokopisi, güncel onaylı öğrenci belgesi, güncel onaylı transkript ve ders ücret dekontu gibi belgelerle başvurur.

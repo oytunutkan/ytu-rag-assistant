@@ -1,0 +1,25 @@
+V13 MİKRO KARTLAR - EŞDEĞERLİK VE İNTİBAK - YÖ-097
+
+KART: Yönergenin kapsamı
+SORU_KALIPLARI: daha önce başka üniversitede aldığım dersleri saydırma hangi yönerge
+CEVAP: Daha önce yükseköğretim kurumlarından alınıp başarılan derslerin muafiyet ve yarıyıl/yıl intibakı YTÜ Eşdeğerlik ve İntibak İşlemleri Yönergesi kapsamındadır.
+
+KART: Uzaktan eğitim istisnası
+SORU_KALIPLARI: uzaktan eğitim programları intibak, eşdeğerlik kapsamı hariç
+CEVAP: YÖ-097, uzaktan eğitim programları hariç olmak üzere daha önce alınan ve başarılan derslerin muafiyet ve intibak işlemlerini düzenler.
+
+KART: AGNO tanımı
+SORU_KALIPLARI: intibak yönergesinde AGNO nedir
+CEVAP: AGNO, hazırlık sınıfı hariç ilgili döneme kadar eğitim planındaki ve üstten alınmış tüm derslerin kredilerine göre ağırlıklı genel not ortalamasıdır.
+
+KART: Değişim programı tanımı
+SORU_KALIPLARI: Erasmus değişim programı dersleri eşdeğer kabul
+CEVAP: Değişim Programı, protokol çerçevesinde öğrencinin kısa süreli olarak diğer kurumda eğitim görmesini ve alınan derslerin diğer kurumda eşdeğer kabul edilebilmesini öngören programdır.
+
+KART: Not çizelgesi
+SORU_KALIPLARI: transkript yönergede nasıl adlandırılır, not çizelgesi başarı durum belgesi
+CEVAP: Transkript, yönergede Not Çizelgesi veya Başarı Durum Belgesi olarak adlandırılır; öğrencinin aldığı derslerin kodu, adı, kredisi ve başarı notlarını içerir.
+
+KART: Başarısız ders intibakı
+SORU_KALIPLARI: başarısız dersi intibak ettirebilir miyim
+CEVAP: İntibak ve muafiyet işlemleri daha önce alınmış ve başarılmış dersler için yapılır; başarısız dersler saydırılamaz.

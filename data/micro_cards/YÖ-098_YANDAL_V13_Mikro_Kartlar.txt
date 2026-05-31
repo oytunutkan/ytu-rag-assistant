@@ -1,0 +1,33 @@
+V13 MİKRO KARTLAR - YAN DAL - YÖ-098
+
+KART: Yan Dal başvuru zamanı
+SORU_KALIPLARI: yan dal başvurusu ne zaman, yandal kaçıncı yarıyıl
+CEVAP: Öğrenci Yan Dal programına en erken 3., en geç 6. yarıyılının başında başvurabilir; başvurular yalnızca güz yarıyılında yapılır.
+
+KART: Aynı anda kaç Yan Dal başvurusu
+SORU_KALIPLARI: iki yan dal başvurusu, aynı anda iki yandal
+CEVAP: Öğrenci aynı anda en fazla iki Yan Dal programına başvurabilir.
+
+KART: Yan Dal AGNO şartı
+SORU_KALIPLARI: yan dal agno kaç, yandal başvuru ortalaması
+CEVAP: Yan Dal başvurusu için anadal programındaki AGNO en az 2.50 olmalıdır.
+
+KART: Yan Dal ders not şartı
+SORU_KALIPLARI: yan dal derslerinde not şartı, her dersten kaç almak gerekir
+CEVAP: Yan Dal programına başvurabilmek için öğrencinin bulunduğu yarıyıla kadar öğretim planındaki derslerinin her birinin not karşılığı 4.0 üzerinden en az 2.0 olmalıdır.
+
+KART: Yan Dal AGNO düşerse
+SORU_KALIPLARI: yan dal agno 2.50 altına düşerse, yandal kaydı askıya
+CEVAP: Yan Dal programına devam ederken anadal AGNO'su 2.50'nin altına düşen öğrencinin Yan Dal kaydı askıya alınır; AGNO yeniden 2.50 ve üzerine çıktığında programa devam edebilir.
+
+KART: DGS ile gelen Yan Dal
+SORU_KALIPLARI: DGS ile geldim yan dal, dikey geçiş yandal
+CEVAP: Üniversiteye Dikey Geçiş dahil merkezi yerleştirme sınavı dışındaki sınavlarla yerleştirilen öğrenciler Yan Dal başvurusu yapamaz.
+
+KART: Yan Dal ortak dersler
+SORU_KALIPLARI: anadal dersleri yan dala sayılır mı, ortak derslerle yandal tamamlanır mı
+CEVAP: Yan Dal programında belirlenen derslerle öğrencinin anadal programındaki dersler ortaksa, ilgili Bölüm Başkanlığı her öğrenci için yeni dersler belirler.
+
+KART: Yan Dal programı açılması
+SORU_KALIPLARI: yan dal programı nasıl açılır, yandal açılması için ne gerekir
+CEVAP: Yan Dal programı ilgili fakülte kurulunun önerisi ve Senato'nun onayı ile açılır; dersler ve kontenjanlar programı yürütecek bölüm tarafından belirlenir.

@@ -1,0 +1,17 @@
+V13 MİKRO KARTLAR - KURUMLAR ARASI YATAY GEÇİŞ - YÖ-098
+
+KART: Kurumlar arası AGNO şartı
+SORU_KALIPLARI: başka üniversiteden YTÜ yatay geçiş AGNO, kurumlar arası ortalama
+CEVAP: Kurumlar arası yatay geçiş için tüm derslerden en az 2.0 ile başarılı olmak ve genel not ortalamasının 4.0 üzerinden en az 3.00 veya 100 üzerinden en az 75 olması gerekir.
+
+KART: Başarı şartı sağlanmıyorsa ÖSYM puanı
+SORU_KALIPLARI: AGNO şartım yok ama ÖSYM puanım yüksek, başarı şartını sağlayamıyorum
+CEVAP: Başarı şartını sağlayamayan ancak merkezi yerleştirme puanı geçiş yapmak istediği programın taban puanına eşit veya yüksek olan aday başvurabilir; bu başvuru yalnızca başarı şartını sağlayan adayların yerleşmesinden sonra boş kontenjan kalırsa değerlendirilir.
+
+KART: İkinci öğretimden kurumlar arası geçiş
+SORU_KALIPLARI: ikinci öğretimde okuyorum YTÜ yatay geçiş
+CEVAP: YTÜ'de ikinci öğretim programlarına öğrenci alımı olmadığından, başka yükseköğretim kurumunda ikinci öğretimde kayıtlı öğrenciler kurumlar arası yatay geçiş başvurusu yapamaz.
+
+KART: DGS ile kurumlar arası yatay geçiş
+SORU_KALIPLARI: DGS ile geldim kurumlar arası yatay geçiş
+CEVAP: Üniversiteye Dikey Geçiş dahil merkezi yerleştirme dışındaki sınavlarla yerleştirilen öğrenciler kurumlar arası yatay geçiş başvurusu yapamaz.
