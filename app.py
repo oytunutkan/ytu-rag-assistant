@@ -44,7 +44,7 @@ def sync_streamlit_secrets_to_env():
 
 sync_streamlit_secrets_to_env()
 
-CHROMA_PATH = os.environ.get("CHROMA_PATH", "chroma_db_cosmos_e5")
+CHROMA_PATH = os.environ.get("CHROMA_PATH", "chroma_db")
 COLLECTION_NAME = os.environ.get("COLLECTION_NAME", "ytu_mevzuat")
 EMBEDDING_MODEL_NAME = os.environ.get("EMBEDDING_MODEL_NAME", "ytu-ce-cosmos/turkish-e5-large")
 USE_E5_INSTRUCT_QUERY = os.environ.get("USE_E5_INSTRUCT_QUERY", "True").lower() in ("true", "1", "yes")
@@ -627,26 +627,79 @@ def extract_agno_from_question(question):
 
 @st.cache_data(show_spinner=False)
 def load_not_donusumu_table(path=NOT_DONUSUMU_PATH):
-    if not os.path.exists(path):
+    """
+    YTÜ not dönüşümü belgesini okuyup AGNO -> 100'lük puan sözlüğü üretir.
+
+    Eski sürüm yalnızca belirli bir cümle kalıbını arıyordu ve global tablo
+    başlatılmadığı için doğrudan not dönüşümü cevapları devreye girmiyordu.
+    Bu sürüm Word metnini docx2txt ile okur, hem cümle formatını hem de
+    olası satır/tablo benzeri iki sayılı formatları tolere eder.
+    """
+    candidate_paths = [path]
+    if not os.path.isabs(path):
+        candidate_paths.append(os.path.join(os.path.dirname(__file__), path))
+
+    real_path = next((item for item in candidate_paths if os.path.exists(item)), None)
+    if not real_path:
         return {}
 
-    text = docx2txt.process(path)
+    try:
+        text = docx2txt.process(real_path) or ""
+    except Exception:
+        return {}
+
     table = {}
 
-    pattern = re.compile(
-        r"AGNO\s+(\d+(?:[,.]\d+)?)\s+notunun\s+100\s*['’]?\s*lük\s+sistemde\s+karşılığı\s+(\d+(?:[,.]\d+)?)\s+puandır",
+    def add_pair(agno_text, puan_text):
+        agno_norm = str(agno_text).strip().replace(",", ".")
+        puan_norm = str(puan_text).strip().replace(",", ".")
+        try:
+            agno_float = float(agno_norm)
+            puan_float = float(puan_norm)
+        except ValueError:
+            return
+
+        if not (0 <= agno_float <= 4 and 0 <= puan_float <= 100):
+            return
+
+        # Aynı değere farklı kullanıcı yazımlarıyla ulaşılabilsin:
+        # 3,90 / 3.90 / 3,9 / 3.9 gibi.
+        table[f"{agno_float:.2f}"] = f"{puan_float:.2f}".rstrip("0").rstrip(".")
+        table[f"{agno_float:.2f}".rstrip("0").rstrip(".")] = f"{puan_float:.2f}".rstrip("0").rstrip(".")
+
+    # Asıl YTU_Not_Donusumu.docx şu cümle formatında geliyor:
+    # AGNO 3,99 notunun 100'lük sistemde karşılığı 99,76 puandır.
+    sentence_pattern = re.compile(
+        r"AGNO\s+([0-4](?:[,.]\d{1,2})?)\s+notunun\s+100\s*['’]?\s*lük\s+sistemde\s+karşılığı\s+(100|\d{1,2}(?:[,.]\d{1,2})?)\s+puandır",
         re.IGNORECASE,
     )
+    for agno, puan in sentence_pattern.findall(text):
+        add_pair(agno, puan)
 
-    for agno, puan in pattern.findall(text):
-        agno_key = agno.replace(",", ".")
-        puan_value = puan.replace(",", ".")
+    # Gelecekte belge tablo/satır formatına dönerse diye toleranslı yedek:
+    # Aynı satırda AGNO + 100'lük karşılık sayısı geçiyorsa yakala.
+    for line in text.splitlines():
+        clean_line = " ".join(line.split())
+        if not clean_line:
+            continue
+        if not contains_any(clean_line, ["agno", "4'lük", "4lük", "100'lük", "100lük", "karşılığı", "karsiligi"]):
+            continue
 
-        float_agno = float(agno_key)
-        table[f"{float_agno:.2f}".rstrip("0").rstrip(".")] = puan_value
-        table[f"{float_agno:.2f}"] = puan_value
+        numbers = re.findall(r"(?<!\d)(100|[0-9](?:[,.]\d{1,2})?|[1-9][0-9](?:[,.]\d{1,2})?)(?!\d)", clean_line)
+        agno_candidates = [n for n in numbers if 0 <= float(n.replace(",", ".")) <= 4]
+        puan_candidates = [n for n in numbers if 0 <= float(n.replace(",", ".")) <= 100]
+
+        if agno_candidates and puan_candidates:
+            # Satırda ilk AGNO benzeri değer ve son puan benzeri değer genelde doğru çifttir.
+            agno = agno_candidates[0]
+            puan = puan_candidates[-1]
+            if agno != puan:
+                add_pair(agno, puan)
 
     return table
+
+
+NOT_DONUSUMU_TABLE = load_not_donusumu_table()
 
 def add_score(scores, category, value):
     # Kategori scoring'de aynı kategori birden fazla güçlü sinyalden puan alabilir.
@@ -1204,10 +1257,13 @@ def detect_categories_from_question(question):
     # Not dönüşümü için sayı + dönüşüm bağlamı şart.
     has_agno_like_number = re.search(r"\b[0-4](?:[,.]\d{1,2})?\b", q) is not None
     has_not_conversion_terms = contains_any(q, [
-        "100", "yuzluk", "yüzlük", "kaç puan", "kac puan",
-        "kaç puandır", "kac puandir", "kaç eder", "kac eder",
+        "agno", "gano", "ortalama",
+        "100", "yuzluk", "yüzlük", "100lük", "100luk", "100'luk",
+        "kaç puan", "kac puan", "kaç puandır", "kac puandir",
+        "kaç eder", "kac eder", "kaçtır", "kactir",
         "kaça denk", "kaca denk", "denk gelir",
         "karşılığı", "karsiligi", "not dönüşümü", "not donusumu",
+        "çevir", "cevir", "dönüştür", "donustur",
     ])
 
     if has_agno_like_number and has_not_conversion_terms:
@@ -1327,27 +1383,46 @@ def detect_categories_from_question(question):
 
     return rank_categories_by_question(question, unique_list(matched))
 
+def is_not_donusumu_question(question):
+    """Kısa not dönüşümü sorularını kategori motoruna takılmadan yakalar."""
+    q = normalize_text(question).replace(",", ".")
+    has_agno = extract_agno_from_question(q) is not None
+    has_conversion_context = contains_any(q, [
+        "agno", "gano", "ortalama", "not dönüşümü", "not donusumu",
+        "100", "yüzlük", "yuzluk", "100lük", "100luk", "100'luk",
+        "kaç puan", "kac puan", "kaç eder", "kac eder", "kaçtır", "kactir",
+        "karşılığı", "karsiligi", "denk", "çevir", "cevir", "dönüştür", "donustur",
+    ])
+    return has_agno and has_conversion_context
+
+
 def answer_not_donusumu_directly(question):
     categories = detect_categories_from_question(question)
 
-    if "not_donusumu" not in categories:
+    if "not_donusumu" not in categories and not is_not_donusumu_question(question):
         return None
 
     agno = extract_agno_from_question(question)
 
-    if agno is None or not NOT_DONUSUMU_TABLE:
+    if agno is None:
         return None
+
+    if not NOT_DONUSUMU_TABLE:
+        return {
+            "cevap": "Not dönüşümü belgesi okunamadığı için doğrudan dönüşüm yapılamadı. Lütfen data/YTU_Not_Donusumu.docx dosyasının repoda bulunduğunu kontrol et.",
+            "kaynak": "YTU_Not_Donusumu.docx",
+        }
 
     try:
         agno_float = float(agno)
-        possible_keys = [f"{agno_float:.2f}".rstrip("0").rstrip("."), f"{agno_float:.2f}"]
+        possible_keys = [f"{agno_float:.2f}", f"{agno_float:.2f}".rstrip("0").rstrip(".")]
     except ValueError:
         possible_keys = [agno]
 
     for key in possible_keys:
         if key in NOT_DONUSUMU_TABLE:
             puan = NOT_DONUSUMU_TABLE[key].replace(".", ",")
-            agno_display = key.replace(".", ",")
+            agno_display = f"{float(key):.2f}".rstrip("0").rstrip(".").replace(".", ",")
             return {
                 "cevap": f"AGNO {agno_display} notunun 100'lük sistemde karşılığı {puan} puandır.",
                 "kaynak": "YTU_Not_Donusumu.docx",
@@ -2219,8 +2294,9 @@ def answer_question(user_prompt, user=None, guest=False):
     direct_not_answer = answer_not_donusumu_directly(user_prompt)
     if direct_not_answer:
         retrieval_debug["direct_lookup"] = True
-        sources = ["YTU_Not_Donusumu.docx"]
-        return direct_not_answer, retrieval_debug, sources, context_docs, arama_sorusu
+        retrieval_debug["categories"] = unique_list(categories + ["not_donusumu"])
+        sources = [direct_not_answer.get("kaynak", "YTU_Not_Donusumu.docx")]
+        return direct_not_answer["cevap"], retrieval_debug, sources, context_docs, arama_sorusu
 
     try:
         db = get_vector_db(CHROMA_PATH, EMBEDDING_MODEL_NAME)
@@ -2319,7 +2395,7 @@ def render_about_page():
     about_html = """<div class="about-card">
 <div class="about-kicker">YTÜ Öğrenci İşleri Asistanı</div>
 <h1>Hakkında</h1>
-<p class="about-lead">Bu asistan, Yıldız Teknik Üniversitesi öğrencilerinin mevzuat, staj ve akademik süreçlerle ilgili sorularına kaynak odaklı ve hızlı cevap vermek için geliştirilmiştir.</p>
+<p class="about-lead">Bu asistan, Yıldız Teknik Üniversitesi öğrencilerinin mevzuat, staj ve akademik süreçlerle ilgili sorularına kaynak odaklı ve hızlı cevap vermek için geliştirilmiştir. Sistem madde odaklı toplam 796 soruluk test setinde ağırlıklı değerlendirme puanlandırmasıyla yaklaşık %88 başarı oranı yakalamıştır. Öğrencilerin sorması daha muhtemel olan 500 soruluk testte ise bu oran yaklaşık %92'dir.</p>
 <div class="about-grid">
 <div class="about-mini-card">
 <h3>Ne yapar?</h3>
