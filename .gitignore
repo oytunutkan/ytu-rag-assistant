@@ -20,7 +20,7 @@ test_runner.py
 benchmark_results*
 *.csv
 *.xlsx
-
+*.db
 .DS_Store
 Thumbs.db
 ytu_asistan_app_firebase.db
