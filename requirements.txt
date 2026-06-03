@@ -2,14 +2,21 @@ streamlit>=1.35.0
 pandas>=2.0.0
 python-dotenv>=1.0.0
 requests>=2.31.0
+
+# Firebase
 firebase-admin==6.5.0
 protobuf>=4.25.0,<5.0.0
+
+# Doküman işleme
 docx2txt>=0.8
-langchain-core>=0.2.0,<0.4.0
-langchain-community>=0.2.0,<0.4.0
-langchain-google-genai>=1.0.0,<3.0.0
-langchain-huggingface>=0.0.3,<0.2.0
-langchain-chroma>=0.1.0,<0.2.0
-langchain-classic>=0.0.1
+
+# LangChain ekosistemi 
+langchain-core>=0.2.0
+langchain-community>=0.2.0
+langchain-google-genai>=1.0.0
+langchain-huggingface>=0.0.3
+langchain-chroma>=0.1.0
+
+# ChromaDB ve Embedding
 chromadb==0.4.24
-sentence-transformers>=2.7.0,<4.0.0
+sentence-transformers>=2.7.0
