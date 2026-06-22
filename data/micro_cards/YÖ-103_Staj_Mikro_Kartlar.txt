@@ -39,3 +39,8 @@ CEVAP: Stajı Bölüm Staj Komisyonu değerlendirir; komisyon bölüm öğretim 
 KART: Stajda ders ve sınav günü
 SORU_KALIPLARI: dersim varken staj, sınav günü staj, yarıyıl içinde staj
 CEVAP: Staj haftada üç iş gününden az olmamak şartıyla eğitim-öğretim döneminde de yapılabilir; ancak öğrenci dersinin veya sınavının olduğu günlerde staj yapamaz.
+
+KART: İki zorunlu stajın aynı firmada yapılması
+SORU_KALIPLARI: iki zorunlu staj aynı firmada yapılabilir mi, iki stajımı aynı şirkette yapabilir miyim, iki staj aynı işyerinde olur mu, stajlarımı aynı firmada yapabilir miyim
+CEVAP: Staj Yönergesinde iki zorunlu stajın aynı firmada yapılmasını yasaklayan açık bir hüküm bulunmamaktadır. Ancak staj yerinin uygun olup olmadığına Bölüm Staj Komisyonu karar verir. Bu nedenle aynı firmada yapılması yönerge düzeyinde açıkça yasak değildir; ilgili Bölüm Staj Komisyonunun uygun görüşü gerekir.
+DAYANAK: YÖ-103 Staj Yönergesi Madde 8, Madde 10, Madde 21.

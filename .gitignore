@@ -10,17 +10,25 @@ __pycache__/
 .idea/
 .vscode/
 
+.streamlit/secrets.toml
+
 .llm_client_state.json
 .gemini_key_state.json
 firebase-service-account.json
 *service-account*.json
 
-
 test_runner.py
+debug_categories.py
+
+grafikler/
 benchmark_results*
 *.csv
 *.xlsx
 *.db
+*.sqlite
+*.sqlite3
+!chroma_db/chroma.sqlite3
+
 .DS_Store
 Thumbs.db
 ytu_asistan_app_firebase.db
